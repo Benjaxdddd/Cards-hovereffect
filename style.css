@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+body{
+    background:#eee;
+}
+
+section{
+    margin-top: 120px;
+    padding:2rem 9%;
+}
+
+.row{
+    
+    display: flex;
+    margin-bottom: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.pricing-table__wrapper {
+    position: relative;
+    padding-top: 10px;
+}
+
+.pricing-cards {
+    width: 100%;
+    height: 0%;
+    top: 0px;
+    margin-bottom: 30px;
+    left: 0;
+}
+
+.containerclients {
+    margin: 10px;
+    border-radius: 20px;
+}  
+
+.containerclients .cardclient {
+    font-size: 12px;
+    margin-bottom: 12px;
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.2);
+    position: relative;
+    width: 220px;
+    height: 350px;
+    background: #f8f7f7;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.containerclients .cardclient:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(37, 150, 190);
+    clip-path: circle(250px at 80% 20%);
+    transition: 0.5s ease-in-out;
+}
+
+/* estilos por empresa */
+
+
+
+/* burgerking */
+.containerclients .cardclient .contentBx a#burgerbtn:hover {
+    background: #0066b7;
+    font-size: 12px;
+    color: #fff;
+}
+
+.containerclients .cardclient#burgerking {
+    background: #0066b7;
+    font-size: 12px;
+}
+
+.containerclients .cardclient#burgerking:before {
+    background: rgb(255, 255, 255);
+}
+/* burgerking */
+
+/* google */
+.containerclients .cardclient .contentBx a#google:hover {
+    background: #fbbc05;
+    font-size: 12px;
+    color: #fff;
+}
+
+.containerclients .cardclient#google {
+    background: #35ac55;
+    font-size: 12px;
+}
+
+.containerclients .cardclient#google:before {
+    background: rgb(255, 255, 255);
+}
+/* google */
+
+
+
+/* coca */
+.containerclients .cardclient .contentBx a#koke:hover {
+    background: #e41c2c;
+    font-size: 12px;
+    color: #fff;
+}
+
+.containerclients .cardclient#koke {
+    background: #e41c2c;
+    font-size: 12px;
+}
+
+.containerclients .cardclient#koke:before {
+    background: rgb(255, 255, 255);
+}
+/* coca */
+
+/* fortnite */
+.containerclients .cardclient .contentBx a#fortnite:hover {
+    background: #69cdf2;
+    font-size: 12px;
+    color: #fff;
+}
+
+.containerclients .cardclient#fortnite {
+    background: #69cdf2;
+    font-size: 12px;
+}
+
+.containerclients .cardclient#fortnite:before {
+    background: rgb(255, 255, 255);
+}
+/* fortnite */
+
+/* mcdonalds*/
+.containerclients .cardclient .contentBx a#mac:hover {
+    background: #fc0404;
+    font-size: 12px;
+    color: #fff;
+}
+
+.containerclients .cardclient#mac{
+    background: #fc0404;
+    font-size: 12px;
+}
+
+.containerclients .cardclient#mac:before {
+    background: rgb(255, 255, 255);
+}
+/* mcdonalds*/
+
+
+/* estilos por empresa */
+
+.containerclients .cardclient:hover:before {
+    clip-path: circle(300px at 80% 20%);
+}
+
+.containerclients .cardclient:after {
+    position: absolute;
+    top: 30%;
+    left: -20%;
+    font-size: 5em;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.04)
+}
+
+.containerclients .cardclient .imgBx{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.containerclients .cardclient:hover .imgBx {
+    top: 0%;
+    transform: translateY(30%);
+}
+
+.containerclients .cardclient:hover .imgBx img  {
+    top: 80%;
+    max-width: 80px;
+    height: auto;
+}
+
+/* not happening forthis product*/
+.containerclients .cardclient .imgBx img {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%) ;
+    max-width: 150px;
+    height: auto;
+}
+
+
+.containerclients .cardclient .contentBx {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    transition: 1s;
+    z-index: 10;
+}
+
+.containerclients .cardclient:hover .contentBx {
+    height: 210px;
+}
+
+.containerclients .cardclient .contentBx h2 {
+    margin-top: 0px;
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: rgb(15, 15, 15);
+}
+
+
+.containerclients .cardclient .contentBx .size,
+.containerclients .cardclient .contentBx .color,
+.containerclients .cardclient .contentBx .price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 0.5px;
+    transition: 0.5%;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.containerclients .cardclient:hover .contentBx .size {
+    opacity: 1;
+    visibility: visible;
+     transition-delay: 0.3s; 
+}
+
+
+.containerclients .cardclient .contentBx .size h3,
+.containerclients .cardclient .contentBx .color h3 .containerclients .cardclient .contentBx .price h3 {
+    margin-left: 12px;
+    color: rgb(0, 0, 0);
+    font-weight: 300;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: 10px;
+}
+
+
+.containerclients .cardclient .contentBx a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 4px;
+    margin-top: 0px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #111;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.5s;
+}
+
+.containerclients .cardclient .contentBx a {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: 0.75s;
+    visibility: hidden;
+}
+
+.containerclients .cardclient:hover .contentBx a {
+    opacity: 1;
+    visibility: visible;
+}
+
+.containerclients .cardclient .contentBx a:hover {
+    background: rgb(37, 150, 190);
+}
+
+@media screen and (max-width: 1200px) {
+    .pricing-table__wrapper {
+        padding-top: 0px;
+    }
+
+    .pricing-cards {
+        position: static;
+    }
+}
